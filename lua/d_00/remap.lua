@@ -24,8 +24,8 @@ vim.keymap.set("n", "n", "nzz")
 vim.keymap.set("n", "N", "Nzz")
 
 -- greatest remap ever (thanks Prime)
-vim.keymap.set("v", "<leader>p", "\"_dp")
-vim.keymap.set("n", "<leader>p", "\"_dp")
+vim.keymap.set("v", "<leader>p", "\"_dP")
+vim.keymap.set("n", "<leader>p", "\"_dP")
 
 -- search current word
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")

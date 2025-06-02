@@ -39,4 +39,14 @@ return require("packer").startup(function(use)
             "BurntSushi/ripgrep",
         },
     }
+
+    use {
+        "d-002/vim-qbuild",
+        requires = {
+            "ahmedkhalf/project.nvim",
+        },
+        config = function()
+            --require("vim-qbuild.config").setup() { }
+        end
+    }
 end)
