@@ -48,10 +48,9 @@ return require("packer").startup(function(use)
     use "dstein64/vim-startuptime"
 
     -- lsp
-    use "neovim/nvim-lspconfig"
+    use "mason-org/mason.nvim"
     use {
-        "neoclide/coc.nvim",
-        branch = "master",
-        run = "npm ci",
+        "williamboman/mason-lspconfig.nvim",
+        requires = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     }
 end)
