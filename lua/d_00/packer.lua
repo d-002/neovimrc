@@ -42,11 +42,13 @@ return require("packer").startup(function(use)
 
     use {
         "d-002/vim-qbuild",
-        requires = {
-            "ahmedkhalf/project.nvim",
-        },
-        config = function()
-            --require("vim-qbuild.config").setup() { }
-        end
+        requires = "ahmedkhalf/project.nvim",
+    }
+
+    use "lewis6991/gitsigns.nvim"
+
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
     }
 end)

@@ -1,6 +1,7 @@
 local theme = require("onedark")
 
 theme.setup {
-    style = "warmer"
+    style = "warmer",
+    transparent = true,
 }
 theme.load()

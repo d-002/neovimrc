@@ -28,4 +28,4 @@ vim.keymap.set("v", "<leader>p", "\"_dP")
 vim.keymap.set("n", "<leader>p", "\"_dP")
 
 -- search current word
-vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>//gI<Left><Left><Left>")
