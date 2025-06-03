@@ -9,8 +9,7 @@ return require("packer").startup(function(use)
 
     use {
         "nvim-telescope/telescope.nvim", tag = "0.1.8",
-        -- or                            , branch = "0.1.x",
-        requires = { {"nvim-lua/plenary.nvim"} }
+        requires = "nvim-lua/plenary.nvim"
     }
 
     use "navarasu/onedark.nvim"
@@ -21,23 +20,17 @@ return require("packer").startup(function(use)
 
     use {
         "ThePrimeagen/harpoon",
-        requires = {
-            "nvim-lua/plenary.nvim",
-        },
+        requires = "nvim-lua/plenary.nvim",
     }
 
     use {
         "mbbill/undotree",
-        requires = {
-            "nvim-lua/plenary.nvim",
-        },
+        requires = "nvim-lua/plenary.nvim",
     }
 
     use {
         "tpope/vim-fugitive",
-        requires = {
-            "BurntSushi/ripgrep",
-        },
+        requires = "BurntSushi/ripgrep",
     }
 
     use {
