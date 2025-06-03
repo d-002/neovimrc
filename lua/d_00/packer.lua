@@ -45,5 +45,13 @@ return require("packer").startup(function(use)
         requires = "nvim-tree/nvim-web-devicons",
     }
 
-    use 'dstein64/vim-startuptime'
+    use "dstein64/vim-startuptime"
+
+    -- lsp
+    use "neovim/nvim-lspconfig"
+    use {
+        "neoclide/coc.nvim",
+        branch = "master",
+        run = "npm ci",
+    }
 end)

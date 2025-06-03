@@ -12,6 +12,8 @@ vim.o.breakindent = true
 vim.o.hlsearch = false
 vim.o.incsearch = true
 
+vim.o.signcolumn = "yes"
+
 vim.o.mouse = "a"
 vim.o.clipboard = "unnamedplus"
 
