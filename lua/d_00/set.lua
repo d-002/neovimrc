@@ -15,7 +15,7 @@ vim.o.incsearch = true
 vim.o.signcolumn = "yes"
 
 vim.o.mouse = "a"
-vim.o.clipboard = "unnamedplus"
+-- vim.o.clipboard = "unnamedplus"
 
 vim.o.scrolloff = 5
 vim.o.colorcolumn = "80"
@@ -26,3 +26,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 vim.o.termguicolors = true
+
+-- trailing spaces--
+vim.o.listchars = "tab:>-,trail:█"
+vim.o.list = true

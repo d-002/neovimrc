@@ -51,6 +51,10 @@ return require("packer").startup(function(use)
     use "mason-org/mason.nvim"
     use {
         "williamboman/mason-lspconfig.nvim",
-        requires = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
+        requires = {
+            "williamboman/mason.nvim",
+            "neovim/nvim-lspconfig"
+        },
     }
+    use "neovim/nvim-lspconfig"
 end)

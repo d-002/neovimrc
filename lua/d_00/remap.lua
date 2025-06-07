@@ -29,3 +29,6 @@ vim.keymap.set("n", "<leader>p", "\"_dP")
 
 -- search current word
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>//gI<Left><Left><Left>")
+
+-- avoid ex mode
+vim.keymap.set("n", "q:", "<Nop>")
