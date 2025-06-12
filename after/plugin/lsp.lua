@@ -1,5 +1,15 @@
+local servers = {
+    "ast_grep",
+    "clangd",
+    "lua_ls",
+    "pyright",
+}
+
 require("mason").setup()
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = servers,
+    automatic_installation = true,
+})
 
 vim.diagnostic.config({
   virtual_text = {
