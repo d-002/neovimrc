@@ -43,6 +43,7 @@ return require("packer").startup(function(use)
     use {
         "nvim-lualine/lualine.nvim",
         requires = "nvim-tree/nvim-web-devicons",
+        config = function() require("lualine").setup() end,
     }
 
     use "dstein64/vim-startuptime"
@@ -56,5 +57,4 @@ return require("packer").startup(function(use)
             "neovim/nvim-lspconfig"
         },
     }
-    use "neovim/nvim-lspconfig"
 end)
