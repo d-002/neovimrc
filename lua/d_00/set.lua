@@ -15,7 +15,13 @@ vim.o.incsearch = true
 vim.o.signcolumn = "yes"
 
 vim.o.mouse = "a"
--- vim.o.clipboard = "unnamedplus"
+
+-- no clipboard on Windows, since it slows down Neovim
+if vim.fn.has("wsl") == 0 then
+    vim.o.clipboard = "unnamedplus"
+end
+
+vim.o.shellcmdflag=-ic
 
 vim.o.scrolloff = 5
 vim.o.colorcolumn = "80"
