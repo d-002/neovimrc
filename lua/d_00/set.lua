@@ -21,7 +21,7 @@ if vim.fn.has("wsl") == 0 then
     vim.o.clipboard = "unnamedplus"
 end
 
-vim.o.shellcmdflag=-ic
+vim.o.shellcmdflag="-ic"
 
 vim.o.scrolloff = 5
 vim.o.colorcolumn = "80"
