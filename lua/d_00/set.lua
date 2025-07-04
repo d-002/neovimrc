@@ -14,7 +14,7 @@ vim.o.incsearch = true
 
 vim.o.signcolumn = "yes"
 
-vim.o.mouse = "c"
+vim.o.mouse = "a"
 
 -- no clipboard on Windows, since it slows down Neovim
 if vim.fn.has("wsl") == 0 then
