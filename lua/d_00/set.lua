@@ -33,6 +33,6 @@ vim.o.smartcase = true
 
 vim.o.termguicolors = true
 
--- trailing spaces--
+-- trailing spaces
 vim.o.listchars = "tab:>-,trail:█"
 vim.o.list = true

@@ -3,7 +3,7 @@ require("mason").setup()
 local servers = {
     "clangd",
     "lua_ls",
-    "pylsp",
+    -- "pyright",
 }
 
 require("mason-lspconfig").setup({
