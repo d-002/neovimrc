@@ -59,4 +59,12 @@ return require("packer").startup(function(use)
             "jay-babu/mason-null-ls.nvim",
         },
     }
+
+    use {
+        'MeanderingProgrammer/render-markdown.nvim',
+        after = { 'nvim-treesitter' },
+        config = function()
+            require('render-markdown').setup({})
+        end,
+    }
 end)
