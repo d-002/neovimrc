@@ -33,5 +33,8 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>//gI<Left><Left><Left>")
 -- avoid ex mode
 vim.keymap.set("n", "q:", "<Nop>")
 
+-- ctrl c to escape
+vim.keymap.set("i", "<C-c>", "<Escape>")
+
 -- clang-format
 vim.keymap.set("n", "<leader>c", ":!clang-format -i %<cr><cr>")

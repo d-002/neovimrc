@@ -64,7 +64,7 @@ return require("packer").startup(function(use)
         'MeanderingProgrammer/render-markdown.nvim',
         after = { 'nvim-treesitter' },
         config = function()
-            require('render-markdown').setup({})
+            require('render-markdown').setup({ yaml = { enabled = false } })
         end,
     }
 end)

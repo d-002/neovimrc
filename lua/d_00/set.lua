@@ -36,3 +36,6 @@ vim.o.termguicolors = true
 -- trailing spaces
 vim.o.listchars = "tab:>-,trail:█"
 vim.o.list = true
+
+-- gdb
+vim.cmd("packadd termdebug")
