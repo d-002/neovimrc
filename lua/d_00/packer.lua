@@ -61,10 +61,12 @@ return require("packer").startup(function(use)
     }
 
     use {
-        'MeanderingProgrammer/render-markdown.nvim',
-        after = { 'nvim-treesitter' },
+        "MeanderingProgrammer/render-markdown.nvim",
+        after = { "nvim-treesitter" },
         config = function()
-            require('render-markdown').setup({ yaml = { enabled = false } })
+            require("render-markdown").setup({ yaml = { enabled = false } })
         end,
     }
+
+    use "andweeb/presence.nvim"
 end)
