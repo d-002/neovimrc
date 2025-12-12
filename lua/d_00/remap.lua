@@ -38,3 +38,6 @@ vim.keymap.set("i", "<C-c>", "<Escape>")
 
 -- clang-format
 vim.keymap.set("n", "<leader>c", ":!clang-format -i %<cr><cr>")
+
+-- postgres, for epita
+vim.keymap.set("n", "<leader>l", ":!psql -f % roger_roger<cr>")
