@@ -1,9 +1,12 @@
-require("mason").setup()
+require("mason").setup({
+    PATH = "append"
+})
 
 local servers = {
     "clangd",
     "lua_ls",
-    -- "pyright",
+    "jdtls",
+    "pyright",
 }
 
 require("mason-lspconfig").setup({
