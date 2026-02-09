@@ -8,7 +8,7 @@ local servers = {
     --"jdtls",
     "pyright",
     "phpactor",
-    "deno",
+    "denols",
     "texlab",
 }
 
