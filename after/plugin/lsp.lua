@@ -7,6 +7,9 @@ local servers = {
     "lua_ls",
     --"jdtls",
     "pyright",
+    "phpactor",
+    "deno",
+    "texlab",
 }
 
 require("mason-lspconfig").setup({
