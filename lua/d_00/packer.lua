@@ -70,5 +70,5 @@ return require("packer").startup(function(use)
 
     use "andweeb/presence.nvim"
 
-    use "mfussenegger/nvim-jdtls"
+    -- use "mfussenegger/nvim-jdtls"
 end)
