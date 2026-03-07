@@ -5,7 +5,6 @@ require("mason").setup({
 local servers = {
     "clangd",
     "lua_ls",
-    "cpplint",
     "pyright",
     "phpactor",
     "denols",
